@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tour & Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-hiking"></i> IndiaTourism.com</a>
+        <nav class="navbar">
+            <div id="nav-close" class="fas fa-times"></div>
+            <a href="index.html#home">home</a>
+            <a href="index.html#category">Adventure</a>
+            <a href="index.html#packages">Packages</a>
+        </nav>
+    </header>
+    <section class="booking">
+        <h1 class="heading-title">book your trip!</h1>
+        <form action="book_form.php" method="post" class="book-form">
+            <div class="flex">
+                <div class="inputBox">
+                    <span>name:</span>
+                    <input type="text" placeholder="enter your name" name="name"  pattern="[A-Za-z]{1,15}" required>
+
+                </div>
+                <div class="inputBox">
+                    <span>phone:</span>
+                    <input type="text" placeholder="enter your number" name="phone" pattern="[0-9]{10}" required>
+                </div>
+                <div class="inputBox">
+                    <span> address: </span>
+                    <input type="text" placeholder="enter your address" name="address" required>
+                </div>
+                <div class="inputBox">
+                    <span>Where to: </span>
+                    <input type="text" placeholder="place you want to visit" name="location"  pattern="[A-Za-z]{1,15}" required>
+                </div>
+                <div class="inputBox">
+                    <span>how many:</span>
+                    <input type="number" placeholder="how many guests" name="guests" required>
+
+                </div>
+                <div class="inputBox">
+                    <span>arrivals:</span>
+                    <input type="date" name="arrivals" min="2022-12-29" max="2023-01-29" required>
+                </div>
+                <div class="inputBox">
+                    <span>leaving</span>
+                    <input type="date" name="leaving" min="2022-12-29" max="2023-01-29" required>
+                </div>
+                <input type="submit" value="submit" class="btn" name="send">
+            </div>
+            
+        </form>
+    </section>
+    <section class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#home">home</a>    
+                <a href="#packages">packages</a>
+                <a href="#query">query</a>
+            </div>
+    
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#contact">ask questions</a>
+                <a href="#">terms of use</a>
+                <a href="#">privacy policy</a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="tel:+91 8790903719"> <i class="fas fa-phone"></i> +91 8790903719 </a>
+                <a href="mailto: maneeshapatireddy@gmail.com"> <i class="fas fa-envelope"></i> maneeshapatireddy@gmail.com </a>
+                <a href="#"> <i class="fas fa-map"></i> Andhra Pradesh, india - 516330 </a>
+            </div>
+    
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="#"> <i class="fab fa-github"></i> github </a>
+            </div>
+        </div>
+        <div class="credit">created by <span>Maneesha Patreddy</span> | all rights reserved!</div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
